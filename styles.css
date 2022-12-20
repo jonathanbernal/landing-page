@@ -14,7 +14,7 @@ body {
 body, .header, .header-container,
 .links, .hero-container, .hero-info,
 .random-information, .img-container, .img-item,
-.quote
+.quote, .dialog-container, .dialog
 {
     display: flex;
 }
@@ -78,13 +78,13 @@ a {
     font-size: 48px;    
 }
 
-.btn {
+.btn, .signup-button {
     width: fit-content;
     border-style: none;
-    border-radius: 10%;
+    border-radius: 5px;
     background-color: #3882f6;
     color: #f9faf8;
-    padding: 8px 16px;
+    padding: 8px 32px;
     font-weight: bold;
 }
 
@@ -145,6 +145,28 @@ a {
     font-size: 20px;
 }
 
+.dialog-container {
+    justify-content: space-evenly;
+    padding: 5em;
+}
 
+.dialog {
+    background-color: #3882f6;
+    justify-content: space-evenly;
+    padding: 3em 6em;
+    border-radius: 10px;
+    gap: 5em;
+}
+
+.signup-text {
+    color: #f9faf8;
+    margin: 0 auto;
+}
+
+.signup-button {
+    border: 2px solid #f9faf8;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
 
 
