@@ -13,7 +13,8 @@ body {
 
 body, .header, .header-container,
 .links, .hero-container, .hero-info,
-.random-information, .img-container, .img-item
+.random-information, .img-container, .img-item,
+.quote
 {
     display: flex;
 }
@@ -123,4 +124,27 @@ a {
     padding: 3em;
     border-radius: 10%;
 }
+
+.quote {
+    background-color: #e5e7eb;
+    flex-direction: column;
+    gap: 8px;
+    padding: 3em 7em;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 36px;
+}
+
+.quote em, .author {
+    align-self: flex-end;
+    text-align: justify;
+}
+
+.author {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
 
