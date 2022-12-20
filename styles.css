@@ -12,7 +12,8 @@ body {
 }
 
 body, .header, .header-container,
-.links, .hero-container, .hero-info
+.links, .hero-container, .hero-info,
+.random-information, .img-container, .img-item
 {
     display: flex;
 }
@@ -90,5 +91,36 @@ a {
     background-color: lightslategray;
     flex-basis: 300px;
     padding: 6em;
+}
+
+.random-information {
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 2em 5em 2em;  
+    gap: 10px;
+}
+
+.random-title {
+    font-size: 36px;
+    color: #1F2937;
+}
+
+.img-container {
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.5em;
+}
+
+.img-item {
+    flex-direction: column;
+    flex-basis: 100px;
+}
+
+.img-item img {
+    flex-basis: 25px;
+    border: solid 2px #3882f6;
+    padding: 3em;
+    border-radius: 10%;
 }
 
