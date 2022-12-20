@@ -1,24 +1,30 @@
 @import url('https://fonts.google.com/specimen/Roboto');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {  
     flex-direction: column;
     height: 100vh;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-body, ul, a, h1, h2, li {
-    margin: 0;
-    padding: 0;
-}
-
 body, .header, .header-container,
-.links
+.links, .hero-container, .hero-info
 {
     display: flex;
 }
 
-.header-title, a {
+.header-title, a,
+.hero-main-text {
     color: #f9faf8;
+}
+
+.links, .hero-subtext {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .header-container, .hero-container {
@@ -36,6 +42,7 @@ a {
 .header-container {
     flex: 1;
     justify-content: center;
+    padding: 18px;
 }
 
 .header-title {
@@ -49,5 +56,39 @@ a {
     align-items: center;
     gap: 16px;
     margin: 0 auto;
+}
+
+.hero-container {
+    justify-content: center;
+    padding: 5em;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.hero-info {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 420px;
+    gap: 8px;
+}
+
+.hero-main-text {
+    font-size: 48px;    
+}
+
+.btn {
+    width: fit-content;
+    border-style: none;
+    border-radius: 10%;
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.hero-img {
+    background-color: lightslategray;
+    flex-basis: 300px;
+    padding: 6em;
 }
 
