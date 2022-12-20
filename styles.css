@@ -1,7 +1,6 @@
 @import url('https://fonts.google.com/specimen/Roboto');
 
-body {
-    display: flex;
+body {  
     flex-direction: column;
     height: 100vh;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -12,8 +11,18 @@ body, ul, a, h1, h2, li {
     padding: 0;
 }
 
+body, .header, .header-container,
+.links
+{
+    display: flex;
+}
+
 .header-title, a {
     color: #f9faf8;
+}
+
+.header-container, .hero-container {
+    background-color: #1F2937;
 }
 
 ul {
@@ -25,13 +34,10 @@ a {
 }
 
 .header {
-    background-color: #1F2937;
-    display: flex;
     justify-content: center;
 }
 
 .header-container {
-    display: flex;
     flex: 1;
     justify-content: center;
 }
@@ -43,7 +49,6 @@ a {
 }
 
 .links {
-    display: flex;
     align-items: center;
     gap: 16px;
     margin: 0 auto;
