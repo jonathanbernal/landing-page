@@ -116,6 +116,7 @@ a {
 .img-item {
     flex-direction: column;
     flex-basis: 100px;
+    gap: 8px;
 }
 
 .img-item img {
