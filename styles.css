@@ -14,7 +14,7 @@ body {
 body, .header, .header-container,
 .links, .hero-container, .hero-info,
 .random-information, .img-container, .img-item,
-.quote, .dialog-container, .dialog
+.quote, .dialog-container, .dialog, .footer-container
 {
     display: flex;
 }
@@ -24,12 +24,12 @@ body, .header, .header-container,
     color: #f9faf8;
 }
 
-.links, .hero-subtext {
+.links, .hero-subtext, .footer-container {
     font-size: 18px;
     color: #e5e7eb;
 }
 
-.header-container, .hero-container {
+.header-container, .hero-container, .footer-container {
     background-color: #1F2937;
 }
 
@@ -167,6 +167,11 @@ a {
     border: 2px solid #f9faf8;
     margin: 0 auto;
     flex-shrink: 0;
+}
+
+.footer-container {
+    padding: 1em;
+    justify-content: center;
 }
 
 
